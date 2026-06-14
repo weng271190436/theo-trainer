@@ -93,7 +93,7 @@ systemd/
 ## SSH Access
 
 ```bash
-ssh wengwei@10.0.0.24
-# or
 ssh wengwei@theo-trainer.local
 ```
+
+Requires `avahi-daemon` on the Pi (installed during setup). Falls back to `ssh wengwei@10.0.0.24` if mDNS isn't working.

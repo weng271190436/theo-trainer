@@ -52,10 +52,7 @@ Place sound files in `~/Videos/`:
 
 ### 7. Install systemd service
 ```bash
-sudo cp systemd/theo-trainer.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable theo-trainer.service
-sudo systemctl start theo-trainer.service
+./install.sh
 ```
 
 ## Usage

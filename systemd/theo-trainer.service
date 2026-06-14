@@ -1,0 +1,14 @@
+[Unit]
+Description=Theo Sound Trainer
+After=bluetooth.target pulseaudio.service
+Wants=bluetooth.target
+
+[Service]
+User=wengwei
+ExecStartPre=/home/wengwei/scripts/bt-connect.sh
+ExecStart=/home/wengwei/scripts/theo-trainer.sh
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

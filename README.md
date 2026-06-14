@@ -28,10 +28,10 @@ trust FC:A8:9A:93:3D:FB
 connect FC:A8:9A:93:3D:FB
 ```
 
-### 3. Copy scripts
+### 3. Link scripts
 ```bash
-cp scripts/*.sh ~/scripts/
-chmod +x ~/scripts/*.sh
+mkdir -p ~/scripts
+ln -sf ~/theo-trainer/scripts/*.sh ~/scripts/
 ```
 
 ### 4. Add source sounds

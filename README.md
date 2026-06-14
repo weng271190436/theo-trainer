@@ -55,6 +55,14 @@ Place sound files in `~/Videos/`:
 ./install.sh
 ```
 
+## Updating
+
+```bash
+cd ~/theo-trainer
+git pull
+./install.sh
+```
+
 ## Usage
 
 ```bash

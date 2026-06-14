@@ -14,12 +14,18 @@ Plays door knock and key sounds at random intervals (5-30 min) through a Bluetoo
 
 ## Setup
 
-### 1. Install dependencies
+### 1. Clone the repo
+```bash
+cd ~
+git clone https://github.com/weng271190436/theo-trainer.git
+```
+
+### 2. Install dependencies
 ```bash
 sudo apt install ffmpeg ffplay pulseaudio pulseaudio-module-bluetooth vim
 ```
 
-### 2. Pair JBL speaker
+### 3. Pair JBL speaker
 ```bash
 bluetoothctl
 scan on
@@ -28,23 +34,23 @@ trust FC:A8:9A:93:3D:FB
 connect FC:A8:9A:93:3D:FB
 ```
 
-### 3. Link scripts
+### 4. Link scripts
 ```bash
 mkdir -p ~/scripts
 ln -sf ~/theo-trainer/scripts/*.sh ~/scripts/
 ```
 
-### 4. Add source sounds
+### 5. Add source sounds
 Place sound files in `~/Videos/`:
 - `keysound.mp4`
 - `knockdoor.MOV`
 
-### 5. Generate variations
+### 6. Generate variations
 ```bash
 ~/scripts/generate-variations.sh
 ```
 
-### 6. Install systemd service
+### 7. Install systemd service
 ```bash
 sudo cp systemd/theo-trainer.service /etc/systemd/system/
 sudo systemctl daemon-reload

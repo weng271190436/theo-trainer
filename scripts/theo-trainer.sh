@@ -8,7 +8,7 @@ pactl set-default-sink bluez_output.FC_A8_9A_93_3D_FB.1
 QUIET_START=23  # 11 PM
 QUIET_END=8     # 8 AM
 
-VIDEOS=(~/Videos/keysound.mp4 ~/Videos/knockdoor.MOV ~/Videos/generated/*.wav)
+VIDEOS=(~/Videos/* ~/Videos/generated/*.wav)
 
 while true; do
     HOUR=$(date +%H)

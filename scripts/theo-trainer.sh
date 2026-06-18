@@ -26,8 +26,7 @@ while true; do
     # Play it (audio only, exit when done)
     ffplay -nodisp -autoexit "$FILE"
 
-    # Wait random 5-30 minutes (300-1800 seconds)
-    WAIT=$((RANDOM % 1500 + 300))
-    echo "Next sound in $((WAIT / 60)) minutes..."
-    sleep $WAIT
+    # Wait exactly 5 minutes (300 seconds)
+    echo "Next sound in 5 minutes..."
+    sleep 300
 done

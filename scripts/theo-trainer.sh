@@ -26,7 +26,7 @@ while true; do
     # Play it (audio only, exit when done)
     ffplay -nodisp -autoexit "$FILE"
 
-    # Wait exactly 10 minutes (600 seconds)
-    echo "Next sound in 10 minutes..."
-    sleep 600
+    # Wait exactly 12 minutes (720 seconds)
+    echo "Next sound in 12 minutes..."
+    sleep 720
 done

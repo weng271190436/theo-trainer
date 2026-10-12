@@ -1,5 +1,5 @@
 #!/bin/bash
-# theo-trainer.sh — Play random sounds at irregular intervals to desensitize Theo
+# theo-trainer.sh — Play random sounds every 7 minutes to desensitize Theo
 
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 pactl set-default-sink bluez_output.FC_A8_9A_93_3D_FB.1

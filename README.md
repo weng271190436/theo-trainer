@@ -4,7 +4,7 @@ Raspberry Pi-based sound desensitization system for training Theo (Border Collie
 
 ## What It Does
 
-Plays door knock and key sounds at random intervals (5-30 min) through a Bluetooth speaker near the apartment door. Variations in pitch, tempo, echo, and volume keep the sounds unpredictable.
+Plays door knock and key sounds every 7 minutes through a Bluetooth speaker near the apartment door. Variations in pitch, tempo, echo, and volume keep the sounds unpredictable.
 
 ## Hardware
 
@@ -83,7 +83,7 @@ sudo systemctl restart theo-trainer.service
 
 ```
 scripts/
-  theo-trainer.sh          # Main loop — random sound at random intervals
+  theo-trainer.sh          # Main loop — random sound every 7 minutes
   bt-connect.sh            # Auto-connect Bluetooth on boot
   generate-variations.sh   # Generate pitch/tempo/echo variations
 systemd/
